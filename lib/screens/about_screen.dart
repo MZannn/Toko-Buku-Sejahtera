@@ -66,13 +66,14 @@ class AboutScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        width: 200,
-                        height: 200,
+                        width: 150,
+                        height: 150,
                         decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
-                                fit: BoxFit.fill,
-                                image: AssetImage("assets/img/penulis-buku.png"))),
+                              fit: BoxFit.fill,
+                              image: AssetImage("assets/img/penulis-buku.png"),
+                            )),
                       ),
                       const SizedBox(
                         height: 10,
