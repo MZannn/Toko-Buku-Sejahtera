@@ -16,9 +16,9 @@ class DashboardScreen extends StatelessWidget {
         return Scaffold(
           body: IndexedStack(
             index: controller.tabIndex,
-            children: const [
-              HomeScreen(),
-              AboutScreen(),
+            children: [
+              const HomeScreen(),
+              const AboutScreen(),
               BookDataScreen()
             ],
           ),

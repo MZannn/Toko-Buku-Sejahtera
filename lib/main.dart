@@ -6,12 +6,13 @@ import 'package:moderna/screens/dashboard_screen.dart';
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
-  const MyApp({ Key? key }) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final dasboardC = Get.put(DashboardController());
+    Get.put(DashboardController());
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: DashboardScreen(),
